@@ -13,7 +13,6 @@ precision_at_k(model, data['test'], k=5).mean()
 
 import pandas as pd
 import os
-os.chdir(r'/Users/ganeshbade/Downloads/BRE-master/data')
 df = pd.read_csv('candy.csv')
 
 z = df.sample(5)
@@ -124,7 +123,6 @@ import os
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
-os.chdir(r'/Users/ganeshbade/Downloads/BRE-master/data')
 
 infile = open('lightfm_reco.pkl', 'rb')
 model = pickle.load(infile)
